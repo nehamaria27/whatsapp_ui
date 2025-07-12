@@ -4,6 +4,17 @@ class communities extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(backgroundColor: Colors.black,);
+    return  Scaffold( appBar: AppBar(
+      backgroundColor: Colors.black,
+      foregroundColor: Colors.white,
+      title: Text("Communities"),
+      centerTitle: false,
+      actions: [
+        Icon(Icons.qr_code_scanner),
+        SizedBox(width: 20),
+        Icon(Icons.more_vert),
+        SizedBox(width: 20),
+      ],
+    ),);
   }
 }
